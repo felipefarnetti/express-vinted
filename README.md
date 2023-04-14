@@ -1,1 +1,1 @@
-# vinted-farnetti
+# express-vinted

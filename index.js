@@ -24,7 +24,7 @@ app.use(userRoutes);
 app.use(offerRoutes);
 
 app.get("/", (req, res) => {
-  res.json("Bonjour vous êtes bien sur mon projet");
+  res.json("Vous etes au bon projet!");
 });
 
 app.all("*", (req, res) => {

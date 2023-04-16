@@ -22,7 +22,7 @@ router.post(
       // Upload de mon image sur cloudinary, la réponse de ce dernier sera dans result
       const result = await cloudinary.uploader.upload(
         convertToBase64(picture),
-        { folder: "/vinted/images" }
+        { folder: "/vinted/offers" }
       );
       // Création de ma nouvelle offre
       const newOffer = new Offer({

@@ -20,7 +20,9 @@ router.post(
       // Je récupère la photo dans la clef suivante
       const picture = req.files.picture;
       // Upload de mon image sur cloudinary, la réponse de ce dernier sera dans result
-      const result = await cloudinary.uploader.upload(convertToBase64(picture));
+      const result = await cloudinary.uploader.upload(convertToBase64(picture),
+     {folder : "/vinted/images"}
+);
       // Création de ma nouvelle offre
       const newOffer = new Offer({
         product_name: title,
